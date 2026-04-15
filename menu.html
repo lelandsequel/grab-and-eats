@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grab & Eatz Menu - Wings, burgers, steaks and more.">
+<title>Menu — Grab & Eatz</title>
+<style>
+  :root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --red: #FF0000;
+    --gold: #FFD700;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Courier New', monospace;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  a { color: var(--black); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 4px solid var(--black);
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 100;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-right: 4px solid var(--black);
+    background: var(--black);
+    color: var(--white);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-right: 4px solid var(--black);
+    transition: background 0.1s, color 0.1s;
+  }
+
+  .nav-links a:hover {
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .nav-links a.active {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  main {
+    padding: 4rem;
+    border-bottom: 4px solid var(--black);
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    border-bottom: 4px solid var(--black);
+    padding-bottom: 1rem;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0;
+  }
+
+  .category {
+    border: 4px solid var(--black);
+    margin: -2px;
+  }
+
+  .category h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    background: var(--black);
+    color: var(--white);
+  }
+
+  .category ul {
+    list-style: none;
+  }
+
+  .category li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid var(--black);
+    font-size: 1.1rem;
+  }
+
+  .category li:last-child { border-bottom: none; }
+
+  .category li span:last-child {
+    font-weight: 700;
+  }
+
+  .add-ons {
+    padding: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    border-top: 2px solid var(--black);
+  }
+
+  footer {
+    padding: 2rem;
+    border-top: 4px solid var(--black);
+    text-align: center;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">GRAB & EATZ</a>
+  <div class="nav-links">
+    <a href="/menu.html" class="active">MENU</a>
+    <a href="/location.html">LOCATION</a>
+    <a href="/story.html">STORY</a>
+  </div>
+</nav>
+
+<main>
+  <h1>MENU</h1>
+
+  <div class="menu-grid">
+    
+    <div class="category">
+      <h2>CHICKEN</h2>
+      <ul>
+        <li><span>Dayna Steele Fluffy Chicken Tender</span><span>$15</span></li>
+        <li><span>6 Wings (Bone-in or Boneless)</span><span>$15</span></li>
+        <li><span>10 Wings (Bone-in or Boneless)</span><span>$20</span></li>
+        <li><span>Sandwich (Fried or Grilled)</span><span>$18</span></li>
+        <li><span>Loaded Fries with Protein</span><span>$15</span></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>BURGERS</h2>
+      <ul>
+        <li><span>Classic Burger</span><span>$16</span></li>
+        <li><span>Trail Burger</span><span>$18</span></li>
+      </ul>
+      <div class="add-ons">ADD-ONS (all $1): Mushrooms, Onions, Salted Bacon, Pepper Jack, Swiss</div>
+    </div>
+
+    <div class="category">
+      <h2>STEAK</h2>
+      <ul>
+        <li><span>Ribeye and Shrimp</span><span>$30</span></li>
+        <li><span>Ribeye 10oz with Fries</span><span>$21</span></li>
+        <li><span>NY Strip with Shrimp</span><span>$26</span></li>
+        <li><span>NY Strip with Fries</span><span>$19</span></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>FISH & SHRIMP</h2>
+      <ul>
+        <li><span>Grilled Shrimp</span><span>$17</span></li>
+        <li><span>Fried Shrimp</span><span>$17</span></li>
+        <li><span>Catfish</span><span>$17</span></li>
+        <li><span>Fish with Fried Shrimp</span><span>$25</span></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>WRAPS</h2>
+      <ul>
+        <li><span>Caesar Wrap</span><span>$14</span></li>
+        <li><span>Buffalo Wrap</span><span>$14</span></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>DRINKS & SIDES</h2>
+      <ul>
+        <li><span>Fresh Juice (Lemon, Horchata, Watermelon)</span><span>$10</span></li>
+        <li><span>Mexican Coke</span><span>$4</span></li>
+        <li><span>Mexican Milkshake</span><span>$10</span></li>
+        <li><span>Fried Apple Pie Rolls with Ice Cream</span><span>$10</span></li>
+        <li><span>Cotton Candy</span><span>$5</span></li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p><a href="https://memorialtrail.com">← BACK TO MEMORIAL TRAIL</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The story behind Grab & Eatz food truck at Memorial Trail Ice House.">
+<title>Story — Grab & Eatz</title>
+<style>
+  :root {
+    --black: #000000;
+    --white: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Courier New', monospace;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  a { color: var(--black); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 4px solid var(--black);
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 100;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-right: 4px solid var(--black);
+    background: var(--black);
+    color: var(--white);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-right: 4px solid var(--black);
+    transition: background 0.1s, color 0.1s;
+  }
+
+  .nav-links a:hover {
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .nav-links a.active {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  main {
+    padding: 4rem;
+    max-width: 800px;
+    border-bottom: 4px solid var(--black);
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .highlight {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    padding: 2rem;
+    border: 4px solid var(--black);
+  }
+
+  footer {
+    padding: 2rem;
+    border-top: 4px solid var(--black);
+    text-align: center;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">GRAB & EATZ</a>
+  <div class="nav-links">
+    <a href="/menu.html">MENU</a>
+    <a href="/location.html">LOCATION</a>
+    <a href="/story.html" class="active">STORY</a>
+  </div>
+</nav>
+
+<main>
+  <h1>THE STORY</h1>
+
+  <p>Grab & Eatz is the official food truck of <strong>Memorial Trail Ice House</strong> — Houston's premier craft bar established in 2019.</p>
+
+  <p>We bring the same quality and care to our food that Memorial Trail brings to their drinks. Every wing, every burger, every steak is made to order with the ingredients you'd expect at a restaurant — not a typical food truck.</p>
+
+  <p>Whether you're catching up with friends, watching the game, or just grabbing a late-night bite — we've got the good stuff.</p>
+
+  <div class="highlight">
+    PULL UP.<br>
+    ORDER IN.<br>
+    TASTE THE TRAIL.
+  </div>
+
+  <p><strong>Memorial Trail Ice House</strong> — A community-rooted craft bar in Houston, TX. Craft cocktails, cold drafts, and patio seating. Open daily.</p>
+
+  <p><a href="https://memorialtrail.com">Learn more about Memorial Trail →</a></p>
+</main>
+
+<footer>
+  <p><a href="https://memorialtrail.com">← BACK TO MEMORIAL TRAIL</a></p>
+</footer>
+
+</body>
+</html>
