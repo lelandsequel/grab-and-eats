@@ -8,180 +8,177 @@
 <link rel="canonical" href="https://grabandeatz.com">
 <style>
   :root {
-    --black: #000000;
-    --white: #FFFFFF;
-    --red: #FF0000;
-    --gold: #FFD700;
+    --charcoal: #1C1C1C;
+    --green: #2D5A3D;
+    --gold: #D4924A;
+    --cream: #F5F0E8;
+    --red: #C41E3A;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background: var(--white);
-    color: var(--black);
-    font-family: 'Courier New', monospace;
-    font-weight: 400;
-    line-height: 1.4;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
   }
 
-  a { color: var(--black); text-decoration: none; }
+  a { color: var(--gold); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
   nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    border-bottom: 4px solid var(--black);
-    position: sticky;
-    top: 0;
-    background: var(--white);
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+    background: rgba(28,28,28,0.95);
+    border-bottom: 1px solid rgba(212,146,74,0.2);
     z-index: 100;
   }
 
-  .nav-brand {
-    font-size: 1.5rem;
+  .nav-logo {
+    font-size: 1.2rem;
     font-weight: 700;
-    padding: 1rem 2rem;
-    border-right: 4px solid var(--black);
-    background: var(--black);
-    color: var(--white);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
   }
 
   .nav-links {
     display: flex;
-    flex-grow: 1;
+    gap: 2rem;
   }
 
   .nav-links a {
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    border-right: 4px solid var(--black);
-    transition: background 0.1s, color 0.1s;
+    color: var(--cream);
+    opacity: 0.8;
   }
 
-  .nav-links a:hover {
-    background: var(--black);
-    color: var(--white);
-    text-decoration: none;
-  }
+  .nav-links a:hover { opacity: 1; }
 
   .hero {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 4rem;
-    border-bottom: 4px solid var(--black);
-    background: url('GG.jpg') center/cover no-repeat;
-    position: relative;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(255,215,0,0.25);
-  }
-
-  .hero > * {
-    position: relative;
-    z-index: 1;
+    padding: 8rem 4rem 4rem;
+    background: linear-gradient(135deg, rgba(28,28,28,0.9) 0%, rgba(28,28,28,0.7) 100%),
+                url('GG.jpg') center/cover no-repeat;
   }
 
   .hero h1 {
-    font-size: clamp(4rem, 15vw, 12rem);
+    font-size: clamp(3rem, 10vw, 7rem);
     font-weight: 900;
-    line-height: 0.85;
     text-transform: uppercase;
-    letter-spacing: -0.02em;
+    line-height: 0.95;
+    color: var(--gold);
   }
 
   .hero h1 span {
     display: block;
-    color: var(--white);
-    -webkit-text-stroke: 3px var(--black);
+    font-size: 0.4em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: var(--cream);
+    margin-top: 0.5rem;
   }
 
   .hero p {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    max-width: 600px;
+    font-size: 1.3rem;
+    max-width: 500px;
+    margin-top: 1.5rem;
+    opacity: 0.8;
   }
 
-  .hero .cta {
-    margin-top: 3rem;
+  .cta {
+    margin-top: 2rem;
     display: flex;
     gap: 1rem;
   }
 
   .btn {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 1rem 2rem;
-    border: 4px solid var(--black);
-    background: var(--black);
-    color: var(--white);
+    border: none;
     cursor: pointer;
+    transition: all 0.2s;
   }
 
-  .btn:hover {
-    background: var(--white);
-    color: var(--black);
+  .btn-primary {
+    background: var(--red);
+    color: var(--cream);
   }
 
-  .btn-outline {
-    background: var(--white);
-    color: var(--black);
+  .btn-primary:hover { background: #a01830; }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid var(--gold);
   }
 
-  .btn-outline:hover {
-    background: var(--black);
-    color: var(--white);
-  }
+  .btn-secondary:hover { background: var(--gold); color: var(--charcoal); }
 
   .info-bar {
     display: flex;
-    border-bottom: 4px solid var(--black);
+    background: var(--green);
+    border-bottom: 3px solid var(--gold);
   }
 
   .info-bar > div {
     flex: 1;
     padding: 1.5rem 2rem;
-    border-right: 4px solid var(--black);
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
   }
 
   .info-bar > div:last-child { border-right: none; }
 
   .info-bar h3 {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
     margin-bottom: 0.5rem;
-    opacity: 0.6;
   }
 
   .info-bar p {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   footer {
     padding: 2rem;
-    border-top: 4px solid var(--black);
     text-align: center;
-    font-weight: 700;
+    border-top: 1px solid rgba(212,146,74,0.2);
+    font-size: 0.85rem;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    .hero { padding: 6rem 2rem 3rem; }
+    .nav-links { display: none; }
+    .info-bar { flex-direction: column; }
+    .info-bar > div { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
   }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-brand">GRAB & EATZ</a>
+  <div class="nav-logo">GRAB & EATZ</div>
   <div class="nav-links">
     <a href="/menu.html">MENU</a>
     <a href="/location.html">LOCATION</a>
@@ -190,18 +187,18 @@
 </nav>
 
 <section class="hero">
-  <h1>GRAB<br>&amp; EATZ<span>HTOUSTON</span></h1>
-  <p>Houston's premier food truck at Memorial Trail Ice House. Wings. Burgers. Steaks. Done right.</p>
+  <h1>GRAB & EATZ<span>HOUSTON'S FOOD TRUCK</span></h1>
+  <p>Wings. Burgers. Steaks. Done right. Find us at Memorial Trail Ice House.</p>
   <div class="cta">
-    <a href="/menu.html" class="btn">VIEW MENU</a>
-    <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank" class="btn btn-outline">UBER EATS</a>
+    <a href="/menu.html" class="btn btn-primary">VIEW MENU</a>
+    <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank" class="btn btn-secondary">UBER EATS</a>
   </div>
 </section>
 
 <div class="info-bar">
   <div>
     <h3>Location</h3>
-    <p>Memorial Trail Ice House, Houston TX</p>
+    <p>Memorial Trail Ice House</p>
   </div>
   <div>
     <h3>Phone</h3>
@@ -212,13 +209,13 @@
     <p>Tue-Sun 11am-9pm</p>
   </div>
   <div>
-    <h3>Find Us</h3>
+    <h3>Social</h3>
     <p><a href="https://instagram.com/gggrabandeatz">@gggrabandeatz</a></p>
   </div>
 </div>
 
 <footer>
-  <p>A MEMORIAL TRAIL ICE HOUSE COMPANY — <a href="https://memorialtrail.com">MEMORIALTRAIL.COM</a></p>
+  <p>A MEMORIAL TRAIL ICE HOUSE COMPANY</p>
 </footer>
 
 </body>
