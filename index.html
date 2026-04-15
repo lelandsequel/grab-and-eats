@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grab & Eatz - Houston's favorite food truck at Memorial Trail Ice House. Wings, burgers, steaks, and more. Order on Uber Eats or visit us on Memorial Trail.">
+<title>Grab & Eatz — Houston Food Truck | Memorial Trail Ice House</title>
+
+<!-- SEO / AEO -->
+<meta name="keywords" content="Houston food truck, Memorial Trail food, wings Houston, burgers Houston, Uber Eats Houston, best food truck Houston, casual dining Houston, Memorial Trail Ice House food, Grab and Eatz, GG Grab and Eatz">
+<meta name="author" content="Grab & Eatz">
+<meta name="geo.region" content="US-TX">
+<meta name="geo.placename" content="Houston">
+<link rel="canonical" href="https://grabandeatz.com">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Grab & Eatz - Houston's Premier Food Truck">
+<meta property="og:description" content="Wings, burgers, steaks & more at Memorial Trail Ice House. Order on Uber Eats or visit us on Memorial Trail.">
+<meta property="og:type" content="restaurant.menu">
+<meta property="og:url" content="https://grabandeatz.com">
+<meta property="og:site_name" content="Grab & Eatz">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Grab & Eatz",
+  "alternateName": "GG Grab and Eatz",
+  "description": "Houston's premier food truck serving wings, burgers, steaks, and more at Memorial Trail Ice House.",
+  "url": "https://grabandeatz.com",
+  "telephone": "+1-346-380-0865",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Memorial Trail Ice House",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "29.7749",
+    "longitude": "-95.4052"
+  },
+  "servesCuisine": ["American", "Burgers", "Wings", "Steak", "Seafood"],
+  "priceRange": "$$",
+  "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
+  "openingHours": "Tu-Th 11:00-21:00, Fr-Sa 11:00-22:00, Su 11:00-20:00",
+  "menu": "https://grabandeatz.com/menu",
+  "sameAs": [
+    "https://instagram.com/gggrabandeatz",
+    "https://uber.grabandeatz.com"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Memorial Trail Ice House",
+    "url": "https://memorialtrail.com"
+  }
+}
+</script>
+
+<!-- Menu Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Grab & Eatz Menu",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Chicken",
+      "hasMenuItem": [
+        {"@type": "MenuItem", "name": "Dayna Steele Fluffy Chicken Tender", "offers": {"@type": "Offer", "price": "15", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "6 Wings (Bone-in or Boneless)", "offers": {"@type": "Offer", "price": "15", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "10 Wings (Bone-in or Boneless)", "offers": {"@type": "Offer", "price": "20", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "Sandwich (Fried or Grilled)", "offers": {"@type": "Offer", "price": "18", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "Loaded Fries with Protein", "offers": {"@type": "Offer", "price": "15", "priceCurrency": "USD"}}
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Burgers",
+      "hasMenuItem": [
+        {"@type": "MenuItem", "name": "Classic Burger", "offers": {"@type": "Offer", "price": "16", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "Trail Burger", "offers": {"@type": "Offer", "price": "18", "priceCurrency": "USD"}}
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Steak",
+      "hasMenuItem": [
+        {"@type": "MenuItem", "name": "Ribeye and Shrimp", "offers": {"@type": "Offer", "price": "30", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "Ribeye 10oz with Fries", "offers": {"@type": "Offer", "price": "21", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "NY Strip with Shrimp", "offers": {"@type": "Offer", "price": "26", "priceCurrency": "USD"}},
+        {"@type": "MenuItem", "name": "NY Strip with Fries", "offers": {"@type": "Offer", "price": "19", "priceCurrency": "USD"}}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #1C1C1C;
+    --green: #2D5A3D;
+    --gold: #D4924A;
+    --cream: #F5F0E8;
+    --red: #C41E3A;
+    --dark: #0A0A0A;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--charcoal);
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--charcoal);
+    border-bottom: 1px solid rgba(212,146,74,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 56px;
+  }
+
+  .nav-logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .nav-logo span { color: var(--cream); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .nav-links a:hover { opacity: 1; }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    background: 
+      linear-gradient(180deg, rgba(10,10,10,0.8) 0%, rgba(28,28,28,0.9) 100%),
+      url('https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=1920') center/cover;
+  }
+
+  .hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 1rem;
+    color: var(--gold);
+  }
+
+  .hero h1 span {
+    display: block;
+    font-size: 0.35em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: var(--cream);
+    margin-top: 0.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--red);
+    color: var(--cream);
+  }
+
+  .btn-primary:hover {
+    background: #a01830;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid var(--gold);
+  }
+
+  .btn-secondary:hover {
+    background: var(--gold);
+    color: var(--charcoal);
+  }
+
+  .partner-bar {
+    background: var(--dark);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(212,146,74,0.2);
+  }
+
+  .partner-bar span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .partner-bar a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  section {
+    padding: 5rem 2rem;
+  }
+
+  .section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gold);
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .menu-category {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(212,146,74,0.15);
+    padding: 2rem;
+  }
+
+  .menu-category h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(196,30,58,0.3);
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .menu-item:last-child { border-bottom: none; }
+
+  .menu-item-name {
+    font-weight: 500;
+  }
+
+  .menu-item-price {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: var(--gold);
+  }
+
+  .add-ons {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 0.25rem;
+  }
+
+  .location-section {
+    background: var(--dark);
+    text-align: center;
+  }
+
+  .location-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: var(--cream);
+    margin-bottom: 1rem;
+  }
+
+  .location-section p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-section a {
+    color: var(--gold);
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .social-links a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .social-links a:hover { opacity: 1; }
+
+  footer {
+    background: var(--dark);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(212,146,74,0.2);
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    opacity: 0.5;
+  }
+
+  footer a {
+    color: var(--gold);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h1 { font-size: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Grab <span>&</span> Eatz</div>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#story">Story</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Grab <span>&amp;</span> Eatz<span>Houston's Premier Food Truck</span></h1>
+  <p>Wings, burgers, steaks & more at Memorial Trail Ice House. 
+    Order online or pull up — we've got the good stuff.</p>
+  <div class="cta-buttons">
+    <a href="#menu" class="btn btn-primary">View Menu</a>
+    <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank" class="btn btn-secondary">Order on Uber Eats</a>
+  </div>
+</section>
+
+<div class="partner-bar">
+  <span>Find us at</span>
+  <a href="https://memorialtrail.com" target="_blank">Memorial Trail Ice House</a>
+  <span>•</span>
+  <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank">Uber Eats</a>
+  <span>•</span>
+  <a href="https://instagram.com/gggrabandeatz" target="_blank">@gggrabandeatz</a>
+</div>
+
+<section id="menu">
+  <h2 class="section-title">Full Menu</h2>
+  <div class="menu-grid">
+    
+    <div class="menu-category">
+      <h3>Chicken</h3>
+      <div class="menu-item">
+        <span class="menu-item-name">Dayna Steele Fluffy Chicken Tender</span>
+        <span class="menu-item-price">$15</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">6 Wings (Bone-in or Boneless)</span>
+        <span class="menu-item-price">$15</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">10 Wings (Bone-in or Boneless)</span>
+        <span class="menu-item-price">$20</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Sandwich (Fried or Grilled)</span>
+        <span class="menu-item-price">$18</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Loaded Fries with Protein</span>
+        <span class="menu-item-price">$15</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Burgers</h3>
+      <div class="menu-item">
+        <span class="menu-item-name">Classic Burger</span>
+        <span class="menu-item-price">$16</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Trail Burger</span>
+        <span class="menu-item-price">$18</span>
+      </div>
+      <div class="add-ons">Add-Ons (all $1): Mushrooms, Onions, Salted Bacon, Pepper Jack, Swiss</div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Steak</h3>
+      <div class="menu-item">
+        <span class="menu-item-name">Ribeye and Shrimp</span>
+        <span class="menu-item-price">$30</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Ribeye 10oz with Fries</span>
+        <span class="menu-item-price">$21</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">NY Strip with Shrimp</span>
+        <span class="menu-item-price">$26</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">NY Strip with Fries</span>
+        <span class="menu-item-price">$19</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Fish &amp; Shrimp</h3>
+      <div class="menu-item">
+        <span class="menu-item-name">Grilled Shrimp</span>
+        <span class="menu-item-price">$17</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Fried Shrimp</span>
+        <span class="menu-item-price">$17</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Catfish</span>
+        <span class="menu-item-price">$17</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Fish with Fried Shrimp</span>
+        <span class="menu-item-price">$25</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Wraps</h3>
+      <div class="menu-item">
+        <span class="menu-item-name">Caesar Wrap</span>
+        <span class="menu-item-price">$14</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Buffalo Wrap</span>
+        <span class="menu-item-price">$14</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Drinks &amp; Sides</h3>
+      <div class="menu-item">
+        <span class="menu-item-name">Fresh Juice (Lemon, Horchata, Watermelon)</span>
+        <span class="menu-item-price">$10</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Mexican Coke</span>
+        <span class="menu-item-price">$4</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Mexican Milkshake</span>
+        <span class="menu-item-price">$10</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Fried Apple Pie Rolls with Ice Cream</span>
+        <span class="menu-item-price">$10</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item-name">Cotton Candy</span>
+        <span class="menu-item-price">$5</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="location" class="location-section">
+  <h2>Find Us</h2>
+  <p><strong>Memorial Trail Ice House</strong></p>
+  <p>Houston, TX</p>
+  <p><a href="tel:+1-346-380-0865">(346) 380-0865</a></p>
+  <p>Hours: Tue-Thu 11am-9pm • Fri-Sa 11am-10pm • Sun 11am-8pm</p>
+  <div class="social-links">
+    <a href="https://instagram.com/gggrabandeatz" target="_blank">Instagram</a>
+    <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank">Uber Eats</a>
+    <a href="https://memorialtrail.com" target="_blank">Memorial Trail Ice House</a>
+  </div>
+</section>
+
+<section id="story">
+  <h2 class="section-title">The Story</h2>
+  <p style="max-width: 700px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.8;">
+    Grab &amp; Eatz is the official food truck of <strong>Memorial Trail Ice House</strong> — 
+    Houston's premier craft bar established in 2019. We bring the same quality and care to our food 
+    that Memorial Trail brings to their drinks. Whether you're catching up with friends, watching the game, 
+    or just grabbing a bite — we've got you covered.
+    <br><br>
+    Pull up, order in, and taste the trail.
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Grab &amp; Eatz. A proud part of <a href="https://memorialtrail.com">Memorial Trail Ice House</a>.</p>
+</footer>
+
+</body>
+</html>
