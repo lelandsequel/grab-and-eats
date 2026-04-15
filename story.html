@@ -7,109 +7,105 @@
 <title>Story — Grab & Eatz</title>
 <style>
   :root {
-    --black: #000000;
-    --white: #FFFFFF;
+    --charcoal: #1C1C1C;
+    --green: #2D5A3D;
+    --gold: #D4924A;
+    --cream: #F5F0E8;
+    --red: #C41E3A;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background: var(--white);
-    color: var(--black);
-    font-family: 'Courier New', monospace;
-    font-weight: 400;
-    line-height: 1.5;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
   }
 
-  a { color: var(--black); text-decoration: none; }
+  a { color: var(--gold); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
   nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    border-bottom: 4px solid var(--black);
-    position: sticky;
-    top: 0;
-    background: var(--white);
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+    background: rgba(28,28,28,0.95);
+    border-bottom: 1px solid rgba(212,146,74,0.2);
     z-index: 100;
   }
 
-  .nav-brand {
-    font-size: 1.5rem;
+  .nav-logo {
+    font-size: 1.2rem;
     font-weight: 700;
-    padding: 1rem 2rem;
-    border-right: 4px solid var(--black);
-    background: var(--black);
-    color: var(--white);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
   }
 
   .nav-links {
     display: flex;
-    flex-grow: 1;
+    gap: 2rem;
   }
 
   .nav-links a {
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    border-right: 4px solid var(--black);
-    transition: background 0.1s, color 0.1s;
+    color: var(--cream);
+    opacity: 0.8;
   }
 
-  .nav-links a:hover {
-    background: var(--black);
-    color: var(--white);
-    text-decoration: none;
-  }
-
-  .nav-links a.active {
-    background: var(--black);
-    color: var(--white);
-  }
+  .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--gold); }
 
   main {
-    padding: 4rem;
-    max-width: 800px;
-    border-bottom: 4px solid var(--black);
+    padding: 6rem 2rem 4rem;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
+    color: var(--gold);
     margin-bottom: 2rem;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
+    opacity: 0.9;
   }
 
   .highlight {
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-transform: uppercase;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     padding: 2rem;
-    border: 4px solid var(--black);
+    border: 1px solid var(--gold);
+    text-align: center;
   }
 
   footer {
     padding: 2rem;
-    border-top: 4px solid var(--black);
     text-align: center;
-    font-weight: 700;
+    border-top: 1px solid rgba(212,146,74,0.2);
+    font-size: 0.85rem;
+    opacity: 0.5;
   }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-brand">GRAB & EATZ</a>
+  <a href="/" class="nav-logo">GRAB & EATZ</a>
   <div class="nav-links">
     <a href="/menu.html">MENU</a>
     <a href="/location.html">LOCATION</a>
@@ -132,13 +128,11 @@
     TASTE THE TRAIL.
   </div>
 
-  <p><strong>Memorial Trail Ice House</strong> — A community-rooted craft bar in Houston, TX. Craft cocktails, cold drafts, and patio seating. Open daily.</p>
-
-  <p><a href="https://memorialtrail.com">Learn more about Memorial Trail →</a></p>
+  <p><strong>Memorial Trail Ice House</strong> — A community-rooted craft bar in Houston, TX. Craft cocktails, cold drafts, and patio seating.</p>
 </main>
 
 <footer>
-  <p><a href="https://memorialtrail.com">← BACK TO MEMORIAL TRAIL</a></p>
+  <p><a href="https://memorialtrail.com">← MEMORIAL TRAIL ICE HOUSE</a></p>
 </footer>
 
 </body>

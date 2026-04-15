@@ -7,106 +7,94 @@
 <title>Location — Grab & Eatz</title>
 <style>
   :root {
-    --black: #000000;
-    --white: #FFFFFF;
-    --red: #FF0000;
+    --charcoal: #1C1C1C;
+    --green: #2D5A3D;
+    --gold: #D4924A;
+    --cream: #F5F0E8;
+    --red: #C41E3A;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background: var(--white);
-    color: var(--black);
-    font-family: 'Courier New', monospace;
-    font-weight: 400;
-    line-height: 1.4;
+    background: var(--charcoal);
+    color: var(--cream);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
   }
 
-  a { color: var(--black); text-decoration: none; }
+  a { color: var(--gold); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
   nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    border-bottom: 4px solid var(--black);
-    position: sticky;
-    top: 0;
-    background: var(--white);
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+    background: rgba(28,28,28,0.95);
+    border-bottom: 1px solid rgba(212,146,74,0.2);
     z-index: 100;
   }
 
-  .nav-brand {
-    font-size: 1.5rem;
+  .nav-logo {
+    font-size: 1.2rem;
     font-weight: 700;
-    padding: 1rem 2rem;
-    border-right: 4px solid var(--black);
-    background: var(--black);
-    color: var(--white);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
   }
 
   .nav-links {
     display: flex;
-    flex-grow: 1;
+    gap: 2rem;
   }
 
   .nav-links a {
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    border-right: 4px solid var(--black);
-    transition: background 0.1s, color 0.1s;
+    color: var(--cream);
+    opacity: 0.8;
   }
 
-  .nav-links a:hover {
-    background: var(--black);
-    color: var(--white);
-    text-decoration: none;
-  }
-
-  .nav-links a.active {
-    background: var(--black);
-    color: var(--white);
-  }
+  .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--gold); }
 
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: calc(100vh - 56px - 80px);
-  }
-
-  .info {
-    padding: 4rem;
-    border-right: 4px solid var(--black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 6rem 2rem 4rem;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    color: var(--gold);
+    margin-bottom: 3rem;
   }
 
   .info-section {
-    margin-bottom: 2rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(212,146,74,0.15);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .info-section h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
+    letter-spacing: 0.15em;
     opacity: 0.6;
     margin-bottom: 0.5rem;
   }
 
   .info-section p {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 
   .cta-buttons {
@@ -116,49 +104,44 @@
   }
 
   .btn {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 1rem 2rem;
-    border: 4px solid var(--black);
-    background: var(--black);
-    color: var(--white);
+    border: none;
     cursor: pointer;
+    transition: all 0.2s;
   }
 
-  .btn:hover {
-    background: var(--white);
-    color: var(--black);
+  .btn-primary {
+    background: var(--red);
+    color: var(--cream);
   }
 
-  .map-placeholder {
-    background: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  .btn-primary:hover { background: #a01830; }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid var(--gold);
   }
+
+  .btn-secondary:hover { background: var(--gold); color: var(--charcoal); }
 
   footer {
     padding: 2rem;
-    border-top: 4px solid var(--black);
     text-align: center;
-    font-weight: 700;
-  }
-
-  @media (max-width: 768px) {
-    main { grid-template-columns: 1fr; }
-    .info { border-right: none; border-bottom: 4px solid var(--black); }
+    border-top: 1px solid rgba(212,146,74,0.2);
+    font-size: 0.85rem;
+    opacity: 0.5;
   }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-brand">GRAB & EATZ</a>
+  <a href="/" class="nav-logo">GRAB & EATZ</a>
   <div class="nav-links">
     <a href="/menu.html">MENU</a>
     <a href="/location.html" class="active">LOCATION</a>
@@ -167,41 +150,35 @@
 </nav>
 
 <main>
-  <div class="info">
-    <h1>FIND US</h1>
-    
-    <div class="info-section">
-      <h2>Location</h2>
-      <p>Memorial Trail Ice House</p>
-      <p>Houston, TX</p>
-    </div>
-
-    <div class="info-section">
-      <h2>Phone</h2>
-      <p><a href="tel:+1-346-380-0865">(346) 380-0865</a></p>
-    </div>
-
-    <div class="info-section">
-      <h2>Hours</h2>
-      <p>Tue-Thu: 11am – 9pm</p>
-      <p>Fri-Sa: 11am – 10pm</p>
-      <p>Sun: 11am – 8pm</p>
-      <p>Mon: Closed</p>
-    </div>
-
-    <div class="cta-buttons">
-      <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank" class="btn">ORDER UBER EATS</a>
-      <a href="https://memorialtrail.com" target="_blank" class="btn">MEMORIAL TRAIL</a>
-    </div>
+  <h1>FIND US</h1>
+  
+  <div class="info-section">
+    <h2>LOCATION</h2>
+    <p>Memorial Trail Ice House</p>
+    <p>Houston, TX</p>
   </div>
 
-  <div class="map-placeholder">
-    [MAP]
+  <div class="info-section">
+    <h2>PHONE</h2>
+    <p><a href="tel:+1-346-380-0865">(346) 380-0865</a></p>
+  </div>
+
+  <div class="info-section">
+    <h2>HOURS</h2>
+    <p>Tue-Thu: 11am – 9pm</p>
+    <p>Fri-Sa: 11am – 10pm</p>
+    <p>Sun: 11am – 8pm</p>
+    <p>Mon: Closed</p>
+  </div>
+
+  <div class="cta-buttons">
+    <a href="https://www.ubereats.com/store/grab-and-eatz" target="_blank" class="btn btn-primary">ORDER UBER EATS</a>
+    <a href="https://memorialtrail.com" target="_blank" class="btn btn-secondary">MEMORIAL TRAIL</a>
   </div>
 </main>
 
 <footer>
-  <p><a href="https://memorialtrail.com">← BACK TO MEMORIAL TRAIL</a></p>
+  <p><a href="https://memorialtrail.com">← MEMORIAL TRAIL ICE HOUSE</a></p>
 </footer>
 
 </body>
